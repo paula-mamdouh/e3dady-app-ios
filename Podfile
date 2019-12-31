@@ -6,5 +6,6 @@ target 'AzureTest' do
   use_frameworks!
 
   # Pods for AzureTest
+	pod 'SnapKit'
 
 end
