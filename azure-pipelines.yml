@@ -21,3 +21,8 @@ steps:
     configuration: 'Release'
     xcWorkspacePath: '**/AzureTest.xcworkspace'
     xcodeVersion: 'default' # Options: 8, 9, 10, default, specifyPath
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)'
+    artifact: 'AzureTestBuild'
+    publishLocation: 'pipeline'
